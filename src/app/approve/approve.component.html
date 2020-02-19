@@ -1,0 +1,35 @@
+<div class="header">
+  صفحه ی تایید خرید
+</div>
+<div class="title">
+  عنوان
+</div>
+<div class="titleholder">
+{{title}}
+</div>
+<div class="description">
+  توضیحات
+</div>
+<div class="descText">
+{{desctext}}
+</div>
+<div class="timecontainer">
+  <div class="timertitle">
+    زمان باقی مانده
+  </div>
+  <div class="timecontent">
+     {{time[0]}}روز و {{time[1]}}ساعت و {{time[2]}}دقیقه و {{time[3]}}ثانیه
+  </div>
+</div>
+<div class="howmany">
+  <mat-icon (click)="additem()">
+    add
+  </mat-icon>
+  {{number}}
+  <mat-icon (click)="removeitem()">
+    remove
+  </mat-icon>
+</div>
+<div class="button" (click)="approve()">
+  تایید
+</div>
